@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!--  <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="logo header-logo" href="./index.html"
@@ -50,18 +50,111 @@
             </li>
           </ul>
         </address>
+
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu-list-two"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!--Mobile menu  -->
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>
+            <svg
+              class="mobile-icon-close modal-close-icone"
+              width="8"
+              height="8"
+            >
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <!-- navigation -->
+
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-list-menu">
+              <li class="mobile-nav">
+                <a href="./index.html" class="mobile-link-menu">
+                  <span class="mobile-link-studio">Studio</span>
+                </a>
+              </li>
+              <li class="mobile-nav">
+                <a href="./index.html" class="mobile-link-menu"> Portfolio </a>
+              </li>
+              <li class="mobile-nav">
+                <a href="./index.html" class="mobile-link-menu"> Contacts </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- navigation -->
+
+          <!-- address -->
+
+          <address class="mobile-menu-contacts">
+            <ul class="mobile-address-list">
+              <li>
+                <a class="mobile-address-link" href="tel:+110001111111"
+                  ><span class="mobile-address-tel"
+                    >+11 (000) 111-11-11</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="mobile-address-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <!-- address -->
+
+          <ul class="icon-list">
+            <li class="icon-item">
+              <a href="" class="icon-link">
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-item">
+              <a href="" class="icon-link">
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-item">
+              <a href="" class="icon-link">
+                <svg class="socials-icon" width="24" height="24">
+                  <use href=" ./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-item">
+              <a href="" class="icon-link">
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
- -->
     <main>
-      <!--   <section class="page-one">
+      <section class="page-one">
         <div class="container">
           <h1 class="solution">Effective Solutions for Your Business</h1>
           <button class="button button-page-one" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
 
       <section class="page-two">
         <div class="container container-page-two">
@@ -500,9 +593,9 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
-    <!-- <div class="backdrop is-open" data-modal>
+    <div class="backdrop is-open" data-modal>
       <div class="modal">
         <button class="exit-btn" type="button" data-modal-close>
           <svg class="exit-icon" width="8" height="8">
@@ -601,5 +694,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>
