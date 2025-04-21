@@ -413,82 +413,242 @@ max-width: 1158px;
 /*    page-one */
 
 .page-one {
+  min-width: 320px;
   background-color: #2e2f42;
-  padding-top: 72px;
-  padding-bottom: 72px;
-  max-width: 320px;
-  margin: 0 auto;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleoffice1.jpg);
+  background-image: linear-gradient(to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
+    url(../images/backgroung/Dark-bg.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
+  color: #fff;
+  margin: 0 auto;
+  padding: 72px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .solution {
-  margin: 0 auto;
   max-width: 216px;
-  margin-bottom: 72px;
+  display: block;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.07;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 72px;
 }
 
-.button-page-one {
-  display: block;
-  margin: 0 auto;
+@media screen and (max-width: 768px) and (min-resolution: 192dpi) {
+  .page-one {
+    background-image: linear-gradient(to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/backgroung/Dark-bg\ @1x.jpg);
+    padding: 72px 0;
+
+  }
 }
+
+@media screen and (min-width: 1158px) {
+  .page-one {
+    padding: 188px 0;
+  }
+
+}
+
+@media screen and (max-width: 768px) and (min-resolution: 192dpi) {
+  .page-one {
+    background-image: linear-gradient(to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/backgroung/Dark-bg\ @1x.jpg);
+    
+
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .page-one {
+    padding: 188px 0;
+  }
+
+}
+
+
 
 .button {
-  min-width: 169px;
-  height: 56px;
-  padding: 16px 32px;
   border-radius: 4px;
   border: none;
-  font-family: "Roboto", sans-serif;
+  padding: 16px 32px;
+  min-width: 169px;
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  cursor: pointer;
   color: #fff;
-  background: #4d5ae5;
+  background-color: #4d5ae5;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button:hover {
-  background-color: #404bbf;
-}
-
+.button:hover,
 .button:focus {
   background-color: #404bbf;
 }
 
 @media screen and (min-width: 768px) {
-.page-one {
-  max-width: 768px;
-  padding-top: 112px;
-  padding-bottom: 112px;
-}
+  .container {
+    max-width: 768px;
 
-.solution {
-  margin: 0 auto;
-   max-width: 496px;
-  margin-bottom: 48px;
-  font-weight: 700;
-  font-size: 56px;
+  }
+
+  .page-one {
+    background-image: linear-gradient(to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/backgroung/Dark-bg\ @1x.jpg);
+  }
+
+  @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .page-one {
+      background-image: linear-gradient(to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)),
+        url(../images/backgroung/background@2x.jpg);
+
+
+
+    }
+  }
+
+  .solution {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
   }
 }
 
 @media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    /* padding: 0 15px; */
+  }
+
+  .page-one {
+    max-width: 1440px;
+    background-image: linear-gradient(to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/backgroung/Dark-bg.jpg);
+
+  }
+
+  
+
+  @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+
 .page-one {
-   max-width: 1440px;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  background-image: linear-gradient(to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)),
+        url(../images/backgroung/background@2x.jpg);
+  
+    }
   }
 
   .solution {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 48px;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .page-one {
+    padding: 112px 0;
+
+  }
+}
+
+.button:hover,
+.button:focus {
+  background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .page-one {
+    background-image: linear-gradient(to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/backgroung/Dark-bg\ @1x.jpg);
+  }
+
+}
+
+  @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .page-one {
+      background-image: linear-gradient(to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)),
+        url(../images/backgroung/background@2x.jpg);
+
+
+    }
+
+  .solution {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    /* padding: 0 15px; */
+  }
+
+  .page-one {
+    max-width: 1440px;
+    background-image: linear-gradient(to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/backgroung/Dark-bg.jpg);
+  }
+
+  @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+    .page-one {
+      background-image: linear-gradient(to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)),
+        url(../images/backgroung/background@2x.jpg);
+      /* padding: 118px 0; */
+    }
+  }
+
+  .solution {
+    font-size: 56px;
+    line-height: 1.07;
     margin-bottom: 48px;
   }
 }
