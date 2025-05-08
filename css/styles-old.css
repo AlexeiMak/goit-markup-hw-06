@@ -430,7 +430,7 @@ img {
     list-style: none;
 }
 
-.footer-socmedia-block-soclinks a.circle {
+.footer-socmedia-block-soclinks .circle {
     display: flex;
     justify-content: center;
     align-items: center;
