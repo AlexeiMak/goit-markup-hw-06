@@ -304,7 +304,7 @@ max-width: 1158px;
   padding-top: 72px;
   padding-bottom: 40px;
   flex-direction: column;
-  height: 100%;
+  height: auto;
   justify-content: flex-start;
   align-items: flex-start;
 }
