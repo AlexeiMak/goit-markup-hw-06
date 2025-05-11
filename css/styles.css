@@ -408,245 +408,138 @@ max-width: 1158px;
 
 /*    page-one */
 
+.container {
+
+max-width: 320px;
+padding: 0 16px;
+
+}
+
 .page-one {
-  min-width: 320px;
   background-color: #2e2f42;
-  background-image: linear-gradient(to bottom,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)),
-    url(../images/backgroung/Dark-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  color: #fff;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  max-width: 320px;
   margin: 0 auto;
-  padding: 72px 0;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/backgroung/dark-bg-mob@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .solution {
-  max-width: 216px;
-  display: block;
-  text-align: center;
+  margin: 0 auto;
+  max-width: 320px;
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 72px;
 }
 
-@media screen and (max-width: 768px) and (min-resolution: 192dpi) {
-  .page-one {
-    background-image: linear-gradient(to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-      url(../images/backgroung/Dark-bg\ @1x.jpg);
-    padding: 72px 0;
-
-  }
+.button-page-one {
+  display: block;
+  margin: 0 auto;
 }
-
-@media screen and (min-width: 1158px) {
-  .page-one {
-    padding: 188px 0;
-  }
-
-}
-
-@media screen and (max-width: 768px) and (min-resolution: 192dpi) {
-  .page-one {
-    background-image: linear-gradient(to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-      url(../images/backgroung/Dark-bg\ @1x.jpg);
-    
-
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .page-one {
-    padding: 188px 0;
-  }
-
-}
-
-
 
 .button {
+  min-width: 169px;
+  height: 56px;
+  padding: 16px 32px;
   border-radius: 4px;
   border: none;
-  padding: 16px 32px;
-  min-width: 169px;
-  display: block;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  cursor: pointer;
   color: #fff;
-  background-color: #4d5ae5;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  margin: 0 auto;
+  background: #4d5ae5;
+  cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button:hover,
+.button:hover {
+  background-color: #404bbf;
+}
+
 .button:focus {
   background-color: #404bbf;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-
-  }
-
-  .page-one {
-    background-image: linear-gradient(to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-      url(../images/backgroung/Dark-bg\ @1x.jpg);
-  }
-
-  @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
-    .page-one {
-      background-image: linear-gradient(to bottom,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)),
-        url(../images/backgroung/background@2x.jpg);
-
-
-
-    }
-  }
-
-  .solution {
-    max-width: 496px;
-    font-size: 56px;
-    line-height: 1.07;
-    margin-bottom: 36px;
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-    /* padding: 0 15px; */
-  }
-
-  .page-one {
-    max-width: 1440px;
-    background-image: linear-gradient(to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-      url(../images/backgroung/Dark-bg.jpg);
-
-  }
-
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
   
+  .page-one {
 
-  @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/backgroung/dark-bg-mob@2x.jpg);
 
-.page-one {
-  background-image: linear-gradient(to bottom,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)),
-        url(../images/backgroung/background@2x.jpg);
-  
-    }
   }
 
-  .solution {
-    font-size: 56px;
-    line-height: 1.07;
-    margin-bottom: 48px;
-  }
 }
-
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
+
+.page-one {
+
+  padding-top: 112px;
+  padding-bottom: 112px;
+  max-width: 768px;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+   url(../images/backgroung/dark-bg-tablet@1x.jpg);
+
+}
+
+.solution {
+  max-width: 496px;
+  margin-bottom: 36px;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+}
+  
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) and (min-resolution: 192dpi) {
+
   .page-one {
-    padding: 112px 0;
+
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/backgroung/dark-bg-tablet@2x.jpg);
 
   }
-}
 
-.button:hover,
-.button:focus {
-  background-color: #404bbf;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-
-  .page-one {
-    background-image: linear-gradient(to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-      url(../images/backgroung/Dark-bg\ @1x.jpg);
-  }
-
-}
-
-  @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
-    .page-one {
-      background-image: linear-gradient(to bottom,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)),
-        url(../images/backgroung/background@2x.jpg);
-
-
-    }
-
-  .solution {
-    max-width: 496px;
-    font-size: 56px;
-    line-height: 1.07;
-    margin-bottom: 36px;
-  }
 }
 
 @media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-    /* padding: 0 15px; */
-  }
 
   .page-one {
-    max-width: 1440px;
-    background-image: linear-gradient(to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-      url(../images/backgroung/Dark-bg.jpg);
-  }
-
-  @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
-    .page-one {
-      background-image: linear-gradient(to bottom,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)),
-        url(../images/backgroung/background@2x.jpg);
+      background-color: #2e2f42;
+      padding-top: 188px;
+      padding-bottom: 188px;
+      max-width: 1440px;
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/backgroung/people-office-desktop@1x.jpg);
     }
+  
+    .solution {;
+      margin-bottom: 42px;
+    }
+  
+}
+
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+
+  .page-one {
+
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+     url(../images/backgroung/people-office-desktop@2x.jpg);
+
   }
 
-  .solution {
-    font-size: 56px;
-    line-height: 1.07;
-    margin-bottom: 48px;
-  }
 }
+
+
 
 /*  page-one   */
 
