@@ -232,13 +232,10 @@ max-width: 1158px;
   width: 100%;
   height: 100%;
   background-color: #fff;
-  opacity: 0;
   visibility: hidden;
-  pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
-  visibility: hidden;
   pointer-events: none;
   z-index: 1100;
 
@@ -299,17 +296,19 @@ max-width: 1158px;
 
 
 
-
 .mobile-menu-container {
+  display: flex;
   position: relative;
+  padding-left: 16px;
+  padding-right: 16px;
   padding-top: 72px;
   padding-bottom: 40px;
-  display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: flex-start;
   align-items: flex-start;
 }
+
 
 
 .mobile-menu-close {
