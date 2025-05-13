@@ -304,9 +304,10 @@ max-width: 1158px;
   padding-top: 72px;
   padding-bottom: 40px;
   flex-direction: column;
-  height: auto;
+  height: 100%;
   justify-content: flex-start;
   align-items: flex-start;
+  overflow-y: auto;
 }
 
 
@@ -339,6 +340,7 @@ max-width: 1158px;
   color: #404bbf;
 }
 
+
 .mobile-list-menu {
   display: flex;
   gap: 40px;
@@ -354,7 +356,6 @@ max-width: 1158px;
   display: block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 
 @media screen and (min-width: 768px) {
@@ -428,7 +429,7 @@ padding: 0 16px;
 
 .solution {
   margin: 0 auto;
-  max-width: 320px;
+  max-width: 216px;
   margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
@@ -521,8 +522,12 @@ padding: 0 16px;
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/backgroung/people-office-desktop@1x.jpg);
     }
   
-    .solution {;
-      margin-bottom: 42px;
+    .solution {
+      max-width: 496px;
+      margin-bottom: 48px;
+
+      font-size: 56px;
+      line-height: 1.07;
     }
   
 }
@@ -997,6 +1002,8 @@ margin-bottom: 8px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-top: 96px;
+  padding-bottom: 96px;
 
 }
 
@@ -1004,7 +1011,6 @@ margin-bottom: 8px;
 
   width: 288px;
   margin-bottom: 72px;
-  padding-top: 96px;
 
 }
 
@@ -1116,8 +1122,6 @@ margin-bottom: 8px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 96px;
-
 }
 
 .footer-label {
@@ -1363,37 +1367,6 @@ margin-bottom: 8px;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 427px) {
-  .backdrop {
-    padding: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-.modal {
-  
-  max-width: 288px;
-  height: 623px;
-  
-}
-  
-.checkbox-text {
-  
-  font-size: 12px;
-  line-height: 1.3;
-  gap: 8px;
-  
-  }
-  
-.box {
-  
-  width: 16px;
-  height: 16px;
-  
-}
-
-}
 
 .backdrop.is-open {
   opacity: 1;
@@ -1426,7 +1399,42 @@ margin-bottom: 8px;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px 24px;
+  padding-top: 72px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media screen and (max-width: 427px) {
+  .backdrop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal {
+    max-width: 288px;
+    height: 623px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .checkbox-text {
+
+    font-size: 12px;
+    line-height: 1.3;
+    gap: 8px;
+
+  }
+
+  .box {
+
+    width: 16px;
+    height: 16px;
+
+  }
+
 }
 
 .exit-btn {
